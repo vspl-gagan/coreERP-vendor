@@ -1,0 +1,38 @@
+{
+    "name": "vishwayon/coreERP",
+    "description": "coreERP dependencies that can be updated by composer",
+    "keywords": ["coreERP", "yii2"],
+    "homepage": "http://www.coreerp.com/",
+    "type": "project",
+    "license": "GPL-V3",
+    "support": {
+        "issues": "https://github.com/vishwayon/coreERP/issues?state=open",
+        "forum": "http://www.coreerp.com/forum/",
+        "wiki": "http://help.coreerp.net",
+        "source": "https://github.com/vishwayon/coreERP"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.3",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2": "2.0.19",
+        "yiisoft/yii2-swiftmailer": "*",
+        "athari/yalinqo": "~2.0",
+        "yiisoft/yii2-twig": "^2.0"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-authclient": "~2.0.0",
+        "kartik-v/yii2-widget-sidenav": "*",
+        "guzzlehttp/guzzle": "~5.3|~6.0"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
