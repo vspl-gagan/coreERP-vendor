@@ -1,5 +1,5 @@
 {
-    "name": "vishwayon/coreERP",
+    "name": "vishwayon/core-erp",
     "description": "coreERP dependencies that can be updated by composer",
     "keywords": ["coreERP", "yii2"],
     "homepage": "http://www.coreerp.com/",
@@ -14,8 +14,8 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.3",
-        "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2": "2.0.19",
+        "yiisoft/yii2-bootstrap": "2.0.10",
         "yiisoft/yii2-swiftmailer": "*",
         "athari/yalinqo": "~2.0",
         "yiisoft/yii2-twig": "^2.0"
