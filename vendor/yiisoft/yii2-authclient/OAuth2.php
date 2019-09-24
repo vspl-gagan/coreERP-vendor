@@ -174,7 +174,10 @@ class OAuth2 extends BaseOAuth
         unset($params['code']);
         $params[0] = Yii::$app->controller->getRoute();
 
-        return Yii::$app->getUrlManager()->createAbsoluteUrl($params);
+        //return urldecode(Yii::$app->getUrlManager()->createAbsoluteUrl($params));
+        $rparams[] = Yii::$app->controller->getRoute();
+        $rparams['authclient'] = 'google';
+        return urldecode(Yii::$app->getUrlManager()->createAbsoluteUrl($rparams));
     }
 
     /**
