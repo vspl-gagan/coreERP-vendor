@@ -16,4 +16,9 @@ namespace yii\helpers;
  */
 class Json extends BaseJson
 {
+    // Override base function for faster processing, avoiding overhead
+    // we do not use expressions in json
+    static function encode($value, $options = 320) {
+        return json_encode($value, $options);
+    }
 }
